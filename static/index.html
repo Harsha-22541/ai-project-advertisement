@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdCraft AI — Product Advertisement Generator</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header>
+  <div class="brand">AdCraft <span>AI</span></div>
+  <div class="tag">AI Product Advertisement Generator</div>
+</header>
+
+<main>
+<section class="hero">
+  <div>
+    <p class="eyebrow">AI FOR GENERATION & AUTOMATION</p>
+    <h1>Turn a product image into a complete advertising campaign.</h1>
+    <p class="sub">Upload a product photo and generate slogans, ad copy, social captions, hashtags and SEO content in seconds.</p>
+  </div>
+</section>
+
+<section class="workspace">
+  <div class="panel">
+    <h2>1. Product Input</h2>
+    <label class="upload" id="drop">
+      <input type="file" id="image" accept="image/*">
+      <div id="previewBox">📷<strong>Upload product image</strong><small>PNG, JPG, JPEG, WEBP</small></div>
+    </label>
+    <div class="fields">
+      <label>Product name<input id="product" placeholder="Optional — e.g. SmartWatch X"></label>
+      <label>Platform<select id="platform"><option>Instagram</option><option>LinkedIn</option><option>YouTube</option><option>Facebook</option><option>Website</option></select></label>
+      <label>Tone<select id="tone"><option>Professional</option><option>Creative</option><option>Luxury</option><option>Funny</option><option>Minimal</option><option>Energetic</option></select></label>
+      <label>Target audience<select id="audience"><option>General</option><option>Students</option><option>Young Professionals</option><option>Families</option><option>Business Customers</option><option>Fitness Enthusiasts</option></select></label>
+      <label>Language<select id="language"><option>English</option><option>Hindi</option><option>Telugu</option></select></label>
+      <label>Length<select id="length"><option>Short</option><option selected>Medium</option><option>Long</option></select></label>
+    </div>
+    <button id="generate">✨ Generate Advertisement</button>
+    <p id="status"></p>
+  </div>
+
+  <div class="panel result">
+    <div class="resultHead">
+      <h2>2. Generated Campaign</h2>
+      <button class="ghost" id="copyAll">Copy All</button>
+    </div>
+    <div id="output" class="empty">
+      <div>🚀</div>
+      <h3>Your AI campaign will appear here</h3>
+      <p>Upload an image and choose your audience, platform and tone.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
